@@ -1,0 +1,26 @@
+<main>
+    <form action="/signUp" method="post">
+        <h2>Welcome to Prisma Drive</h2>
+        <h4>Registration</h4>
+
+        <%- include('partials/errors') %>
+
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" id="firstName">
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="lastName" id="lastName">
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+
+        <label for="confirmPassword">Confirm Pasword:</label>
+        <input type="password" name="confirmPassword" id="confirmPassword">
+
+        <input type="submit" value="Get Started">
+
+    </form>
+</main>

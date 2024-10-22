@@ -1,0 +1,19 @@
+
+<main>
+    <form action="/login" method="post">
+        <h2>Welcome to Prisma Drive</h2>
+        <h4>Login</h4>
+
+        <%- include('partials/errors') %>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" value="<%= locals.user%> ? <%= locals.user.email%> : ''">
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+
+        <input type="submit" value="Login">
+
+        <p>Not registered yet? - <a class="sign-up-link">Sign-Up</a> now!</p>
+    </form>
+</main>
